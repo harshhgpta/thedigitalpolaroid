@@ -3,6 +3,10 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
  */
+ @font-face {
+  font-family: "Ailerons";
+  src: url("../font/ailerons.otf");
+  }
 body,
 html {
     width: 100%;
@@ -228,17 +232,18 @@ section h2 {
     font-weight: 100;
     letter-spacing: 2px;
     font-size: 5vw;
+    transition: transform .2s
 }
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #aaa
+    transform: scale(1.1);
 }
 
 #mainNav .navbar-toggler {
     font-size: 12px;
     padding: 8px 10px;
-    color: #aaa
+    color: #000
 }
 
 #mainNav .navbar-nav>li>a {
@@ -249,7 +254,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav>li>a.active {
-    color: #111111 !important;
+    color: #000000 !important;
     background-color: transparent
 }
 
@@ -259,12 +264,12 @@ section h2 {
 
 #mainNav .navbar-nav>li>a,
 #mainNav .navbar-nav>li>a:focus {
-    color: #aaa
+    color: #555
 }
 
 #mainNav .navbar-nav>li>a:focus:hover,
 #mainNav .navbar-nav>li>a:hover {
-    color: #999999
+    color: #000
 }
 
 @media (min-width:992px) {
@@ -277,21 +282,24 @@ section h2 {
     #mainNav .navbar-brand {
         color: white;
         font-size: 2vw;
+        transition: transform .2s;
     }
 
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover {
-        color: #fff
+        transform: scale(1.1);
     }
 
     #mainNav .navbar-nav>li>a,
     #mainNav .navbar-nav>li>a:focus {
-        color: rgba(255, 255, 255, .7)
+        color: white;
+        transition: transform .2s
     }
 
     #mainNav .navbar-nav>li>a:focus:hover,
     #mainNav .navbar-nav>li>a:hover {
-        color: #fff
+        color: #fff;
+        transform: scale(1.1);
     }
 
     #mainNav.navbar-shrink {
@@ -300,22 +308,23 @@ section h2 {
     }
 
     #mainNav.navbar-shrink .navbar-brand {
-        color: #222
+        color: #000;
+        transition: transform .2s;
     }
 
     #mainNav.navbar-shrink .navbar-brand:focus,
     #mainNav.navbar-shrink .navbar-brand:hover {
-        color: #999
+        transform: scale(1.1);
     }
 
     #mainNav.navbar-shrink .navbar-nav>li>a,
     #mainNav.navbar-shrink .navbar-nav>li>a:focus {
-        color: #222
+        color: #666
     }
 
     #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,
     #mainNav.navbar-shrink .navbar-nav>li>a:hover {
-        color: #999
+        color: #222
     }
 }
 
